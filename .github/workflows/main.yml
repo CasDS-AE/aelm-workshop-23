@@ -12,7 +12,7 @@ jobs:
         with:
           go-version: '1.21.x'
       - name: go init
-        run: go mod init
+        run: go mod init ./workshp-service
       - name: Install dependencies
         run: go install .
       - name: Build
