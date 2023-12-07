@@ -12,4 +12,5 @@ jobs:
         with:
           go-version: '1.21.4'
       - name: Build
+        working-directory: workshop-service
         run: go build -v ./...
