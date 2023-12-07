@@ -10,9 +10,9 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v4
         with:
-          go-version: '1.21.x'
+          go-version: '1.21.4'
       - name: Install dependencies
-        run: go install .
+        run: go install ./workshop-service
       - name: Build
         run: go build -v ./...
       - name: Test with the Go CLI
